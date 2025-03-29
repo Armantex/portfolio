@@ -1,52 +1,21 @@
 ---
-import MainHtml from "@/layouts/MainHtml.astro";
-/* import lang from "@/lang/es.json";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge"; */
+import Con1 from "@body/con1.astro";
+import Con2 from "@body/con3.astro";
+import Con3 from "@body/con3.astro";
+import Info from "@body/info.astro";
+
+import MainHtml from "@layouts/MainHtml.astro";
 ---
 
-<MainHtml title="Portafolio">
+<MainHtml>
   <section
-    id="Name"
-    class="flex flex-col h-screen justify-center bg-fixed bg-image bg-no-repeat bg-cover"
+    id="cube"
+    class="absolute grid grid-rows-6 grid-cols-5 gap-4
+      w-[92%] h-[86%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
   >
-    <div class="text-center text-white">
-      <h1 class="font-bold text-6xl">Armando Escobar</h1>
-      <h1 class="mt-4 text-4xl">Programmer</h1>
-    </div>
+    <Info class="order-1 row-span-4 col-span-3 rounded-xl" />
+    <Con1 class="order-2 row-span-3 col-span-2 rounded-xl" />
+    <Con2 class="order-4 row-span-2 col-span-3 rounded-xl" />
+    <Con3 class="order-3 row-span-3 col-span-2 rounded-xl" />
   </section>
-  <!-- 
-  <div class="md:container">
-    <section id="Skills">
-      <h1 class="text-center text-2xl">{lang.skills}:</h1>
-      <div class="flex justify-center">
-        <Badge>React</Badge>
-        <Badge>Java</Badge>
-        <Badge>JavaScript</Badge>
-        <Badge>HTML</Badge>
-        <Badge>CSS</Badge>
-        <Badge>Git</Badge>
-        <Badge>Spring Boot</Badge>
-      </div>
-    </section>
-    <section id="Learning">
-      <h1 class="text-center text-2xl">{lang.startingLearn}:</h1>
-      <div class="flex justify-center">
-        <Badge>Rust</Badge>
-        <Badge>Astro</Badge>
-      </div>
-    </section>
-    <section id="email">
-      <h1 class="text-center text-2xl">{lang.contacts}</h1>
-      <div class="flex justify-center">
-        <div class="flex max-w-sm space-x-2">
-          <Input type="email" placeholder="Email" />
-          <Button type="submit">{lang.send}</Button>
-          <Button type="submit">{lang.copy}</Button>
-        </div>
-      </div>
-    </section>
-  </div>
-  -->
 </MainHtml>

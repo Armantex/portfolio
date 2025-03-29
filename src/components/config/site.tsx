@@ -4,4 +4,5 @@ export const siteConfig = {
 		whatsapp: "https://api.whatsapp.com/send?phone=541122559077",
 		curriculum: "/Curriculum.pdf",
 	},
+	name: "Armando Escobar",
 };

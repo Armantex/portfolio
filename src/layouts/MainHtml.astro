@@ -1,7 +1,9 @@
 ---
 // component import
 import MainHead from "./MainHead.astro";
-import MainNav from "@/components/mainNav.astro";
+import Footer from "@body/footer.astro";
+import Header from "@body/header.astro";
+
 // style import
 import "@/styles/globals.css";
 import "@/styles/local.css";
@@ -15,9 +17,8 @@ const {
 <html lang="en">
   <MainHead {title} {description} />
   <body class="montserrat-normal">
-    <MainNav />
-    <main>
-      <slot />
-    </main>
+    <Header />
+    <slot />
+    <Footer />
   </body>
 </html>

@@ -1,7 +1,6 @@
 .bg-image {
   background-image: url("/portfolio/keyboards.jpg");
 }
-
 html {
   @apply h-full;
 }
@@ -10,7 +9,7 @@ body {
   @apply h-full;
 }
 
-.montserrat-normal {
+.font-montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;

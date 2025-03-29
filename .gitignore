@@ -20,3 +20,4 @@ src/env.d.ts
 # macOS-specific files
 .DS_Store
 .stfolder/
+.direnv/
